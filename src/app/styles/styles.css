@@ -65,7 +65,6 @@ body {
   transition: all 300ms ease;
   -webkit-box-shadow: 10px 0px 50px 0px rgba(0, 0, 0, 0.685);
           box-shadow: 10px 0px 50px 0px rgba(0, 0, 0, 0.685);
-  z-index: -1;
 }
 
 .personal-info__datos {
@@ -89,7 +88,7 @@ body {
 }
 
 .personal-info--green {
-  background-color: #8DC540;
+  background-color: #81af40;
 }
 
 .personal-info--orange {
@@ -97,14 +96,14 @@ body {
 }
 
 .personal-info--blue {
-  background-color: #4ec3bf;
+  background-color: #6291bd;
 }
 
 .personal-info:hover {
-  -webkit-box-shadow: -5px 0px 5px 10px rgba(255, 197, 37, 0.986), -20px 0px 0px 0px darkcyan, -30px 0px 14px 14px #77aff8;
-          box-shadow: -5px 0px 5px 10px rgba(255, 197, 37, 0.986), -20px 0px 0px 0px darkcyan, -30px 0px 14px 14px #77aff8;
-  -webkit-transform: translate(30px, -10px);
-          transform: translate(30px, -10px);
+  -webkit-box-shadow: -5px 0px 5px 0px rgba(54, 52, 47, 0.986), -20px 0px 0px 0px darkcyan, -30px 0px 14px 14px #77aff8;
+          box-shadow: -5px 0px 5px 0px rgba(54, 52, 47, 0.986), -20px 0px 0px 0px darkcyan, -30px 0px 14px 14px #77aff8;
+  -webkit-transform: translate(10px, 0px);
+          transform: translate(10px, 0px);
 }
 
 .b-header {
@@ -120,7 +119,6 @@ body {
   background-size: cover;
   -webkit-box-shadow: 0px 20px 29px 0px rgba(0, 0, 0, 0.47);
           box-shadow: 0px 20px 29px 0px rgba(0, 0, 0, 0.47);
-  z-index: -1;
 }
 
 .b-header__container {
