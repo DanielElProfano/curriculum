@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald:wght@200&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald';
+}
+
+.row {
+  margin: 0;
+}
+
+.col-12 {
+  padding: 0;
+}
+
+.main-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 600px;
+}
+
+.main {
+  max-width: 80%;
+  margin: 30px auto;
+}
+
+.main .buttons {
+  margin: 20px 0;
+}
+
+.data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.personal-info {
+  min-width: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-box-shadow: 10px 0px 50px 0px rgba(0, 0, 0, 0.685);
+          box-shadow: 10px 0px 50px 0px rgba(0, 0, 0, 0.685);
+  z-index: -1;
+}
+
+.personal-info__datos {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 40px;
+}
+
+.personal-info__datos--span {
+  font-weight: normal;
+}
+
+.personal-info__title {
+  font-size: 1.6rem;
+  padding: 10px 0 0 20px;
+}
+
+.personal-info--pink {
+  background-color: #EB685F;
+}
+
+.personal-info--green {
+  background-color: #8DC540;
+}
+
+.personal-info--orange {
+  background-color: #e6a050;
+}
+
+.personal-info--blue {
+  background-color: #4ec3bf;
+}
+
+.personal-info:hover {
+  -webkit-box-shadow: -5px 0px 5px 10px rgba(255, 197, 37, 0.986), -20px 0px 0px 0px darkcyan, -30px 0px 14px 14px #77aff8;
+          box-shadow: -5px 0px 5px 10px rgba(255, 197, 37, 0.986), -20px 0px 0px 0px darkcyan, -30px 0px 14px 14px #77aff8;
+  -webkit-transform: translate(30px, -10px);
+          transform: translate(30px, -10px);
+}
+
+.b-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(11, 12, 9, 0.377)), to(rgba(0, 0, 0, 0.445))), url("/src/app/assets/perfil.jpg");
+  background: linear-gradient(to right, rgba(11, 12, 9, 0.377), rgba(0, 0, 0, 0.445)), url("/src/app/assets/perfil.jpg");
+  background-color: #e696fa;
+  opacity: 1;
+  background-position: 0 1258px;
+  background-size: cover;
+  -webkit-box-shadow: 0px 20px 29px 0px rgba(0, 0, 0, 0.47);
+          box-shadow: 0px 20px 29px 0px rgba(0, 0, 0, 0.47);
+  z-index: -1;
+}
+
+.b-header__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.b-header__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.b-header__name--title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 10px 40px 10px 0;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 5px 10px #19221b;
+}
+
+.b-header__mySelf {
+  font-family: 'Architects Daughter' , cursive;
+  color: white;
+}
+
+.b-header__img {
+  height: 75%;
+  border-radius: 50%;
+  margin: 50px 50px;
+}
+
+.b-lista {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 1.2rem;
+}
+
+.b-lista__li {
+  padding: 5px;
+}
+
+.b-lista__li--bold {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */
