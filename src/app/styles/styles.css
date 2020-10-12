@@ -177,4 +177,30 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
 }
+
+.b-main {
+  margin: 72px 40px 0 80px;
+}
+
+.b-main__title {
+  font-weight: bold;
+  color: #6291bd;
+  font-size: 1.2rem;
+}
+
+.b-main__description {
+  color: black;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.b-main__description--bold {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.b-main__oculto {
+  padding: 24px 5px;
+  margin-left: 24px;
+}
 /*# sourceMappingURL=styles.css.map */

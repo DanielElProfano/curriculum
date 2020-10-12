@@ -1,5 +1,4 @@
-*
-{}
+
 @import url("https://fonts.googleapis.com/css?family=Mystery+Quest");
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald:wght@200&display=swap');
 
@@ -146,3 +145,34 @@ body {
 
       }
     }
+
+.b-main{
+
+  margin: 72px 40px 0 80px;
+    &__title{
+      font-weight: bold;
+      color: rgb(98, 145, 189);
+      font-size: 1.2rem;
+
+
+    }
+    &__description{
+      color:black;
+      font-size: 1.2rem;
+      list-style: none;
+      &--bold{
+        font-weight: bolder;
+        cursor: pointer;
+      }
+    }
+    &__oculto{
+
+      // border: 1px solid black;
+      padding: 24px 5px;
+      margin-left: 24px;
+      
+    }
+
+
+
+}

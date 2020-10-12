@@ -39,7 +39,7 @@ var onLoadExperience = () => {
 
        var ul = document.createElement('ul');
        ul.setAttribute('id','experience_ul_'+indexJob);
-       ul.setAttribute('class','b-lista');
+       ul.setAttribute('class','b-main__description');
       
        experienceSection.appendChild(ul);
        var experienceList = document.getElementById("experience_ul_"+indexJob);
@@ -51,7 +51,7 @@ var onLoadExperience = () => {
           console.log("------------"+propiedad);
        
           if (propiedad === 'companyName'){
-             li.setAttribute('class', 'b-lista__li--bold');
+             li.setAttribute('class', 'b-main__description b-main__description--bold');
              li.setAttribute('value',indexJob);
              li.setAttribute('id','experienceDescription'+indexJob);
              li.setAttribute('onClick',"experienceFunction()");
@@ -70,6 +70,7 @@ var onLoadExperience = () => {
 
 var toggleExperience = () => {
   console.log('toggleExperience');
+  
   var experience = document.getElementById("experience");
   if (experience.style.display === "none") {
     experience.style.display = "block";
@@ -77,17 +78,48 @@ var toggleExperience = () => {
     experience.style.display = "none";
   }
 }
-var experienceFunction = () =>{
+var experienceFunction = (e) =>{
+  var experienceDescription =['glory globalkjgwegseaasdfkjañljñlñlkhgf','asdflkhaskfhoijlqw','La treasdñljhañsdhñl'];
+  
+      //   console.log(myArray);
+      //   if(myArray == undefined){
+  
+      //     var myArray=[];}
 
-    var experienceDescription =['glory globalkjaasdfkjañljñlñlkhgf','asdflkhaskfhoijlqw','La treasdñljhañsdhñl'];
-    // console.log(valor);
-   //  alert(valor);
-    var li = document.createElement('p');
-    li.setAttribute('style','position:absolute;left:400px;border:1px solid red;');
-    var appendDescription = document.getElementById('experienceDescription1');
-    li.innerHTML = experienceDescription[0];
-    appendDescription.appendChild(li);
+      
+        var valorOrigen = e.srcElement.value;
+      //   if (myArray[valorOrigen] === undefined){
+      //         myArray[valorOrigen] = 0;
+      //   }
+   
+      // console.log(myArray);
+        // for (var i = 0 ; i <= valorOrigen; i++){
+         
+          if(document.getElementById('experienceHide_'+valorOrigen) === null)
+        {
+            var origen = document.getElementById('experienceDescription'+valorOrigen);
+            var pItem = document.createElement('p');
+            pItem.setAttribute('class','b-main__oculto');
+            pItem.setAttribute('id','experienceHide_'+valorOrigen);
+            pItem.innerHTML = experienceDescription[valorOrigen];
+            origen.appendChild(pItem);
+          }
+          else{
+            var origen = document.getElementById('experienceHide_'+valorOrigen);
+            origen.remove();
 
-}
+          }
+        
+              
+            
+        
+
+       
+      
+        
+    }
+   
+
+
 
 export { onLoadExperience, toggleExperience, experienceFunction,};

@@ -24,6 +24,7 @@ studies.forEach((study,index) => {
     var ul=document.createElement('ul');
     
     ul.setAttribute('id','studies-ul_'+index);
+    ul.setAttribute('class','b-main__description' );
    
     // console.log(ul);
     studiesSection.appendChild(ul);

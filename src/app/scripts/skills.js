@@ -1,7 +1,7 @@
 var skills=[
     {
-    habilidad: 'Concentración', 
-    descripción: 'Me pongo mis cascos y nada puede conmigo',
+    habilidad: 'Confiaza', 
+    descripción: 'Me considero una persona con confianza en mis habilidades',
     },
     {
     habilidad: 'Trabajo en equipo', 
@@ -14,7 +14,7 @@ var skills=[
 ];
 var onLoadSkills = () =>{
     
-    var skillSection = document.getElementById('skills');
+    var skillSection = document.getElementById('skills-programacion');
 
     skills.forEach((skill,index) => {
         var myArray = Object.keys(skill);
