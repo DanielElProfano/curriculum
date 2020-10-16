@@ -37,15 +37,22 @@ studies.forEach((study,index) => {
         li.setAttribute('class','studies__li');
         li.innerHTML = study.[element];
         studiesProp.appendChild(li);
-
-
-
-
-
     });
 
 
 })
 
 }
-export { onLoadStudies };
+
+var toggleStudies = () =>{
+
+      
+  var studies = document.getElementById("studies");
+  if (studies.style.display === "none") {
+    studies.style.display = "block";
+    document.getElementById('experience').style.display="none";
+  } else {
+    studies.style.display = "none";
+  }
+}
+export { onLoadStudies, toggleStudies};

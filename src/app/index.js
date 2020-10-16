@@ -1,15 +1,15 @@
 import { onLoadPersonalInfo } from './scripts/personalInfo';
 import { onLoadExperience, toggleExperience,experienceFunction } from './scripts/experience';
-import { onLoadStudies } from './scripts/studies.js';
-import { onLoadSkills } from './scripts/skills.js';
+import { onLoadStudies, toggleStudies} from './scripts/studies.js';
+import { onLoadSkills} from './scripts/skills.js';
 import { onLoadHobbies } from './scripts/hobbies.js';
 import './styles/styles.scss';
 
 
 var addListeners = () =>{
     document.getElementById("btn_hide_experience").addEventListener("click", toggleExperience);
+    document.getElementById("btn_hide_etudios").addEventListener("click", toggleStudies);
     var exp0 = document.getElementById('experienceDescription0');
-  
     exp0.addEventListener("click", experienceFunction);
     var exp1 = document.getElementById('experienceDescription1');
     exp1.addEventListener("click", experienceFunction);
@@ -25,4 +25,5 @@ window.onload = () => {
     onLoadSkills();
     experienceFunction();
     onLoadHobbies();
+    toggleStudies();
 };

@@ -85,11 +85,15 @@ var onLoadExperience = () => {
 var toggleExperience = () => {
   
   console.log('toggleExperience');
- 
-  
   var experience = document.getElementById("experience");
+  // var secciones = document.getElementById('secciones');
+  //  var mostrarStyle = window.getComputedStyle(experience);
+  //           var mostrarDisplay = mostrarStyle.getPropertyValue('display');
+  // console.log("display : " +experience.style.display);
+  //    debugger 
   if (experience.style.display === "none") {
     experience.style.display = "block";
+    document.getElementById('studies').style.display = "none";
   } else {
     experience.style.display = "none";
   }
@@ -98,7 +102,7 @@ var experienceFunction = (e) =>{
 
   var experienceDescription = ['Experience1','Experience2','Experience3'];
   var valorOrigen = e.srcElement.value;
-    
+   
           if(document.getElementById('experienceHide_'+valorOrigen) === null)
         {
             var origen = document.getElementById('experienceDescription'+valorOrigen);
@@ -109,8 +113,8 @@ var experienceFunction = (e) =>{
             pItem.setAttribute('id','experienceHide_'+valorOrigen);
            
             origen.appendChild(pItem);
-            var mostrar = document.getElementById('experienceHide_'+valorOrigen);
-            mostrar.style.height="100px";
+            // var mostrar = document.getElementById('experienceHide_'+valorOrigen);
+            // mostrar.style.height="100px";
             // var mostrarStyle = window.getComputedStyle(mostrar);
             // var mostrarAltura = mostrarStyle.getPropertyValue('height');
             pItem.innerHTML = experienceDescription[valorOrigen];

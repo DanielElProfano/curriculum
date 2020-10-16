@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?kpoafa');
-  src:  url('fonts/icomoon.eot?kpoafa#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?kpoafa') format('truetype'),
-    url('fonts/icomoon.woff?kpoafa') format('woff'),
-    url('fonts/icomoon.svg?kpoafa#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ao248h');
+  src:  url('fonts/icomoon.eot?ao248h#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ao248h') format('truetype'),
+    url('fonts/icomoon.woff?ao248h') format('woff'),
+    url('fonts/icomoon.svg?ao248h#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-gears:before {
+  content: "\e02b";
+}
+.icon-pencil:before {
+  content: "\e032";
+}
+.icon-bike:before {
+  content: "\e042";
+}
+.icon-global:before {
+  content: "\e052";
+}
+.icon-world:before {
+  content: "\e905";
+}
+.icon-mail-envelope-closed:before {
+  content: "\e906";
+}
 .icon-herramienta-de-telefono-movil:before {
   content: "\e900";
 }
@@ -39,12 +57,6 @@
 }
 .icon-lnr-pointer-right:before {
   content: "\e904";
-}
-.icon-world:before {
-  content: "\e905";
-}
-.icon-mail-envelope-closed:before {
-  content: "\e906";
 }
 .icon-home:before {
   content: "\e907";

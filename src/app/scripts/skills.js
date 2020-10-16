@@ -1,11 +1,11 @@
 var skills=[
     {
     habilidad: 'FRONT END', 
-    descripción: 'SCSS, JS, Angular, React, Node',
+    descripción: 'HTML, SCSS, JS, Angular, React, Node.',
     },
     {
     habilidad: 'BACK END', 
-    descripción: 'PHP, MySQL',
+    descripción: 'PHP, MySQL.',
     },
     // {
     // habilidad: 'Adaptación',
@@ -21,7 +21,7 @@ var onLoadSkills = () =>{
         var ul=document.createElement('ul');
         
         ul.setAttribute('id','skill-ul_'+index);
-    
+        ul.setAttribute('class','personal-info__lista');
         // console.log(ul);
         skillSection.appendChild(ul);
         var skillProp = document.getElementById('skill-ul_'+index);
@@ -29,11 +29,20 @@ var onLoadSkills = () =>{
         myArray.forEach((element)=>{
             var property = element;
             // console.log(property);
+            if(property === 'habilidad'){
+                var li=document.createElement('li');
+                li.setAttribute('class','personal-info__lista personal-info__lista--title');
+                li.innerHTML = skill.[element];
+                skillProp.appendChild(li);
+
+
+            }
+            else{
             var li=document.createElement('li');
-            li.setAttribute('class','skill__li');
+            li.setAttribute('class','personal-info__lista--skill');
             li.innerHTML = skill.[element];
             skillProp.appendChild(li);
-
+            }
 
 
 
