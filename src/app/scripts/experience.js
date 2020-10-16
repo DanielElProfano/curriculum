@@ -49,27 +49,43 @@ var onLoadExperience = () => {
           // console.log("La propiedad es: "+propiedad);
           var li = document.createElement('li');
           console.log("------------"+propiedad);
-       
+          var span = document.createElement('span');
+          span.setAttribute('class','b-main__span icon-circle-down');
+          span.setAttribute('id','experienceSpan'+indexJob);
+          // span.innerHTML="hola";
           if (propiedad === 'companyName'){
-             li.setAttribute('class', 'b-main__description b-main__description--bold');
+          
+             li.setAttribute('class', 'b-main__description b-main__description--bold ');
              li.setAttribute('value',indexJob);
              li.setAttribute('id','experienceDescription'+indexJob);
              li.setAttribute('onClick',"experienceFunction()");
-
+             li.innerHTML = job.[element];
+             experienceList.appendChild(li);
+             li.appendChild(span);
+              // experienceList.appendChild(span);
           }
           else
           {
+            
              li.setAttribute('class', 'b-lista__li');
+             
+           li.innerHTML = job.[element];
+           experienceList.appendChild(li);
           }
-          li.innerHTML = job.[element];
-          experienceList.appendChild(li);
+         
+          
+          // li.innerHTML = job.[element];
+          // experienceList.appendChild(li);
+         
 
        });   
 });
 }
 
 var toggleExperience = () => {
+  
   console.log('toggleExperience');
+ 
   
   var experience = document.getElementById("experience");
   if (experience.style.display === "none") {
@@ -79,33 +95,32 @@ var toggleExperience = () => {
   }
 }
 var experienceFunction = (e) =>{
-  var experienceDescription =['glory globalkjgwegseaasdfkjañljñlñlkhgf','asdflkhaskfhoijlqw','La treasdñljhañsdhñl'];
-  
-      //   console.log(myArray);
-      //   if(myArray == undefined){
-  
-      //     var myArray=[];}
 
-      
-        var valorOrigen = e.srcElement.value;
-      //   if (myArray[valorOrigen] === undefined){
-      //         myArray[valorOrigen] = 0;
-      //   }
-   
-      // console.log(myArray);
-        // for (var i = 0 ; i <= valorOrigen; i++){
-         
+  var experienceDescription = ['Experience1','Experience2','Experience3'];
+  var valorOrigen = e.srcElement.value;
+    
           if(document.getElementById('experienceHide_'+valorOrigen) === null)
         {
             var origen = document.getElementById('experienceDescription'+valorOrigen);
             var pItem = document.createElement('p');
+            var spanItem = document.getElementById('experienceSpan'+valorOrigen);
+            spanItem.setAttribute('class','b-main__span icon-circle-up');
             pItem.setAttribute('class','b-main__oculto');
             pItem.setAttribute('id','experienceHide_'+valorOrigen);
-            pItem.innerHTML = experienceDescription[valorOrigen];
+           
             origen.appendChild(pItem);
+            var mostrar = document.getElementById('experienceHide_'+valorOrigen);
+            mostrar.style.height="100px";
+            // var mostrarStyle = window.getComputedStyle(mostrar);
+            // var mostrarAltura = mostrarStyle.getPropertyValue('height');
+            pItem.innerHTML = experienceDescription[valorOrigen];
           }
           else{
+            var spanItem = document.getElementById('experienceSpan'+valorOrigen);
+            spanItem.setAttribute('class','b-main__span icon-circle-down');
             var origen = document.getElementById('experienceHide_'+valorOrigen);
+            // var mostrar = document.getElementById('experienceHide_'+valorOrigen);
+            // // mostrar.style.height = "0px";
             origen.remove();
 
           }

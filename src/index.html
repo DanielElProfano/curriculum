@@ -8,14 +8,14 @@
     <!-- <link rel="stylesheet" href="src/app/styles/styles.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mystery+Quest">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald:wght@200&display=swap" rel="stylesheet">
-
-    <title>CV - Mario Polo</title>
+    <link rel="stylesheet" href="/src/app/assets/style.css">
+    <title>Daniel González</title>
   </head>
   <body>
     <header class="b-header">
       <div class="b-header__container">
          <div class="b-header__img">
-          <img class="b-header__img" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+          <!-- <img class="b-header__img" src="" width="200px" alt="Foto sobre mí"> -->
         </div>
         <div class="b-header__name">
           <h1 class="b-header__name b-header__name--title">Daniel González Guijarro</h1>
@@ -31,10 +31,10 @@
                     Contact
                   </h3>
                  
-                  <p class="personal-info__datos">Correo: <span id="personal_info_mail" class="personal-info__datos--span"></span></p>
-                  <p class="personal-info__datos">Teléfono: <span id="personal_info_phone" class="personal-info__datos--span"></span></p>
-                  <p class="personal-info__datos">Edad: <span id="personal_info_age" class="personal-info__datos--span"></span></p>
-                  <p class="personal-info__datos">Dirección: <span id="personal_info_addres" class="personal-info__datos--span"></span></p>
+                  <p class="personal-info__datos"><span class="icon-mail-envelope-closed personal-info__icon"></span><span id="personal_info_mail"></span></p>
+                  <p class="personal-info__datos" ><span class="icon-herramienta-de-telefono-movil personal-info__icon"></span></span><span id="personal_info_phone"></span></p>
+                  <!-- <p class="personal-info__datos" >Edad: <span id="" class="personal-info__icon"></span><span id="personal_info_age"></span></p> -->
+                  <p class="personal-info__datos" ><span class="icon-house personal-info__icon"></span><span id="personal_info_address"></span></p>
             </div>
             
             <div class="personal-info personal-info--green">
@@ -45,7 +45,7 @@
                     
                     
             </div>
-            <div class="personal-info personal-info--orange">
+            <div class="personal-info personal-info--blue">
                 <h3 class="personal-info__title">
                   skills
                 </h3>
@@ -55,7 +55,7 @@
               </div>
            
            
-                <div class="personal-info personal-info--blue">
+                <div class="personal-info personal-info--orange">
                   <h3 class="personal-info__title">
                     Hobbies
                   </h3>
@@ -69,28 +69,31 @@
    
       <main class="b-main">
       
-      <section class="b-main__title row">
-        <div class= "col-5">
-         Sobre Mi:
+        <section class="b-main__title row">
+          <div class= "col-3">
+          Sobre Mi:
+          </div>
+          <p class="b-main__description">Desde muy pequeño me fascinaba la informática. Mi primer ordenador no fue un Amstrand CPC ni un Atari como el del resto de mis amigos. Yo tuve un PC 286 de 16 Mhz ¡Osea lo último del último! y desde ahí descubrí la maravillosa creatividad del Basic. Ya hacía mis primeros programillas con 12 años y animaciones, sencillas.. pero por aquel entonces no había Google para salir de atolladero, aquello era pegarse literalmente con el código.   </p>
+        </section>
+    
+        <div class="buttons">
+          <button id="btn_hide_experience">Toggle experiencia</button>
         </div>
-        <p class="b-main__description">Desde muy pequeño me fascinaba la informática. Mi primer ordenador no fue un Amstrand CPC ni un Atari como el del resto de mis amigos. Yo tuve un PC 286 de 16 Mhz ¡Osea lo último del último! y desde ahí descubrí la maravillosa creatividad del Basic. Ya hacía mis primeros programillas con 12 años y animaciones, sencillas.. pero por aquel entonces no había Google para salir de atolladero, aquello era pegarse literalmente con el código.   </p>
-      </section>
-  
-      <div class="buttons">
-        <button id="btn_hide_experience">Toggle experiencia</button>
-      </div>
-      <section id="experience" class="b-main__title">
-        <h4>Experiencia</h4>
-        <ul id="experience_list" class="b-lista"></ul>
-      </section>
-      <section id="studies" class="b-main__title">Estudios
+        <section id="experience" class="b-main__title">
+          <h4>Experiencia</h4>
+          <ul id="experience_list" class="b-lista"></ul>
+        </section>
+        <section id="studies" class="b-main__title">Estudios
 
-      </section>
-      <section id="skills">Skills
-        
-      </section>
-      <span onClick="experienceFunction();" style="cursor: pointer">Ver Usuario</span>
+        </section>
+     
+    
        </main>
+      </div>
+       <footer class = "b-footer">
+
+adsgsg
+       </footer>
   
 
   </body>

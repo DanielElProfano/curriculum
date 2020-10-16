@@ -1,16 +1,16 @@
 var skills=[
     {
-    habilidad: 'Confiaza', 
-    descripción: 'Me considero una persona con confianza en mis habilidades',
+    habilidad: 'FRONT END', 
+    descripción: 'SCSS, JS, Angular, React, Node',
     },
     {
-    habilidad: 'Trabajo en equipo', 
-    descripción: 'Estoy muy acostumbrado a realizar trabajo en equipo tanto online como presencial',
+    habilidad: 'BACK END', 
+    descripción: 'PHP, MySQL',
     },
-    {
-    habilidad: 'Adaptación',
-    descripcion: 'siempre me he adapatado o todo fácilmente, sólo hay que tener la mente abierta'
-    }
+    // {
+    // habilidad: 'Adaptación',
+    // descripcion: 'siempre me he adapatado o todo fácilmente, sólo hay que tener la mente abierta'
+    // }
 ];
 var onLoadSkills = () =>{
     

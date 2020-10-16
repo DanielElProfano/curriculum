@@ -3,11 +3,11 @@ var personalInfo = {
   mail: "Danielo@mail.com",
   phone: "555 555 555",
   age: "43",
-  addres: "Fuenlabrada, Madrid"
+  addres: "Fuenlabrada, Madrid",
 };
 
 var onLoadPersonalInfo = () => {
-  console.log('onLoadPersonalInfo');
+  
   var myName = document.getElementById("personal_info_name");
   myName.innerHTML = personalInfo.name;
 
@@ -17,11 +17,13 @@ var onLoadPersonalInfo = () => {
   var myPhone = document.getElementById("personal_info_phone");
   myPhone.innerHTML = personalInfo.phone;
 
-  var myPhone = document.getElementById("personal_info_age");
-  myPhone.innerHTML = personalInfo.age;
+  // var myAge = document.getElementById("personal_info_age");
+  // myAge.innerHTML = personalInfo.age;
+ 
 
-  var myPhone = document.getElementById("personal_info_addres");
-  myPhone.innerHTML = personalInfo.addres;
+  var myAddres = document.getElementById("personal_info_address");
+  myAddres.innerHTML = personalInfo.addres;
+
 }
 
 export { onLoadPersonalInfo };
